@@ -1,0 +1,50 @@
+<header>
+  <%# imgタグ→image_tagに、aタグ→link_toに書き換える %>
+  <%# 3(5),14(16),29(34)行目のaタグは変更しない %>
+  <nav class='navbar navbar-expand-lg navigation navbar-light bg-light'>
+    <a class='navbar-brand' href='/'>
+      <%= image_tag src='/assets/logo.png' %>
+    </a>
+    <button class='navbar-toggler' data-toggle='collapse' data-target='#navbarSupportedContent'
+      aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
+      <span class='navbar-toggler-icon'></span>
+    </button>
+
+    <div class='collapse navbar-collapse' id='navbarSupportedContent'>
+      <ul class='navbar-nav ml-auto main-nav align-items-center'>
+        <li class='nav-item dropdown dropdown-slide'>
+          <a href='#' class='nav-link dropdown-toggle' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>
+            掲示板
+          </a>
+
+          <div class='dropdown-menu dropdown-menu-right'>
+            <!-- <a class='dropdown-item' href='#'>掲示板一覧</a> -->
+            <%= link_to '掲示板一覧', '#', class:'dropdown-item' %>
+            <!-- <a class='dropdown-item' href='#'>掲示板作成</a> -->
+            <%= link_to '掲示板作成', '#', class:'dropdown-item' %>
+          </div>
+        </li>
+
+        <li class='nav-item'>
+          <!-- <a class='nav-link' href='#'>ブックマーク一覧</a> -->
+          <%= link_to 'ブックマーク一覧', '#', class:'vav-link' %>
+        </li>
+
+        <li class='nav-item dropdown dropdown-slide'>
+          <a href='#' class='nav-link' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false' id='header-profile'>
+            <!-- <img class='rounded-circle mr15' src='sample.jpg' width='40' height='40' /> -->
+            <%= image_tag src='/assets/sample.jpg',class: 'rounded-circle mr15', width:'40', height:'40' %>
+          </a>
+          <div class='dropdown-menu dropdown-menu-right'>
+            <div class='dropdown-item'>らんてっく たろう</div>
+            <div class='dropdown-divider'></div>
+            <!-- <a class='dropdown-item' href='#'>プロフィール</a> -->
+            <%= link_to 'プロフィール', '#', class:'dropdown-item' %>
+            <a class='dropdown-item' href='#'>ログアウト</a>
+            <!-- <%= link_to 'ログアウト', '#', class:'dropdown-item' %> -->
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
