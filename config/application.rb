@@ -21,6 +21,12 @@ module RunteqNormal
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
+    # アプリケーションでサポートする言語の一覧を設定
+    config.i18n.available_locales = %i[ja en]
+    # デフォルトのlocaleを:ja(日本語にする)
+    config.i18n.default_locale = :ja
+    # ロケールファイル読み込みのpathを通す
+    config.i18n.load_path += Dir[Rails.root.join('config/locales/**/*.{rb,yml}').to_s]
 
     # rails g ... コマンドを使用した際にassets, helper, testファイル, ルーティングが生成されないこと。
     config.generators do |g|
