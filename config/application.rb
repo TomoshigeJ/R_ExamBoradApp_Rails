@@ -36,6 +36,9 @@ module RunteqNormal
       g.skip_routes true
     end
 
+    # 基準時刻を日本時間に設定
+    config.time_zone = 'Tokyo'
+
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
