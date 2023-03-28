@@ -5,6 +5,8 @@ ja:
     logout: 'ログアウト'
     message:
       not_authenticated: 'ログインしてください'
+      created: "%{item}を作成しました"
+      not_created: "%{item}を作成できませんでした"
   users:
     new:
       title: 'ユーザー登録'
@@ -31,9 +33,6 @@ ja:
       form_title: 'タイトル'
       form_body: '本文'
       form_submit: '作成'
-    create:
-      success: '掲示板を作成しました'
-      fail: '掲示板を作成できませんでした'
     bookmarks:
       title: 'ブックマーク一覧'
     profiles:
