@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2">
+      <h1><%= t('.title')%></h1>
+      <%= form_with model: @board, class: 'new_board', local: true do |f| %>
+        <div class="form-group">
+          <%= f.label :title, t('.form_title') %>
+          <%= f.text_field :title, class: 'form-control', id: 'board_title' %>
+        </div>
+        <div class="form-group">
+          <%= f.label :body, t('.form_body') %>
+          <%= f.text_area :body, class: 'form-control', rows: 10, style: 'height: 200px', id: 'board_body' %>
+        </div>
+        <%= f.submit t('.form_submit'), class: 'btn btn-primary', data: { disable_with: '送信中' } %>
+      <% end %>      
+    </div>
+  </div>
+</div>
