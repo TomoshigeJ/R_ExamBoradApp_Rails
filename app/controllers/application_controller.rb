@@ -1,11 +1,9 @@
 class ApplicationController < ActionController::Base
-  before_action :authenticate_user!
+  before_action :require_login
 
   add_flash_types :success, :info, :warning, :danger
 
-  def authenticate_user!
-    unless current_user
-      redirect_to login_path, danger: t('application.require_login')
-    end
+  def not_authenticated
+      redirect_to login_path, warning: t('defaults.message.not_authenticated')
   end
 end

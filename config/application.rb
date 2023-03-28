@@ -38,6 +38,7 @@ module RunteqNormal
 
     # 基準時刻を日本時間に設定
     config.time_zone = 'Tokyo'
+    config.active_record.default_timezone = :local
 
 
     # Settings in config/environments/* take precedence over those specified here.
