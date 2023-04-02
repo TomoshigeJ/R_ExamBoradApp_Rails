@@ -3,6 +3,7 @@ ja:
     login: 'ログイン'
     register: '登録'
     logout: 'ログアウト'
+    post: '投稿'
     message:
       not_authenticated: 'ログインしてください'
       created: "%{item}を作成しました"
@@ -33,6 +34,8 @@ ja:
       form_title: 'タイトル'
       form_body: '本文'
       form_submit: '作成'
+    show:
+      title: '掲示板詳細'
     bookmarks:
       title: 'ブックマーク一覧'
     profiles:

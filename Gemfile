@@ -69,7 +69,7 @@ gem 'sorcery', '0.14.0'
 gem 'pry-byebug'
 gem 'rails-i18n'
 gem 'draper'
-gem 'font-awesome-sass', '5.15.1'
+gem 'font-awesome-sass', '5.11.2'
 gem 'faker'
 gem 'carrierwave'
 gem "mini_magick"
