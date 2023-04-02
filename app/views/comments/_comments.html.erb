@@ -1,8 +1,7 @@
-<!-- コメントエリア -->
-  <div class="row">
-    <div class="col-lg-8 offset-lg-2">
-      <table id="js-table-comment" class="table">
-        <%= render partial: 'comments/comment', collection: comments, as: :comment %>
-      </table>
-    </div>
+<div class="row">
+  <div class="col-lg-8 offset-lg-2">
+    <table id="js-table-comment" class="table">
+      <%= render comments %>
+    </table>
   </div>
+</div>
