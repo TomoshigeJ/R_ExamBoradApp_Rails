@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= yield :page_title%></title>
+    <title><%= yield_for(:title, 'RUNTEQ BOARD APP')%></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
