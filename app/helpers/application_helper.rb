@@ -1,9 +1,7 @@
 module ApplicationHelper
-  def page_title(title)
-    content_for(:title) { title }
-  end
+  def page_title(page_title = '')
+    base_title = 'RUNTEQ BOARD APP'
 
-  def yield_for(content_symbol, default = '')
-    content_for?(content_symbol) ? "#{content_for(content_symbol)} | #{default}" : default
+    page_title.empty? ? base_title : page_title + ' | ' + base_title
   end
 end
