@@ -27,7 +27,12 @@ class User < ApplicationRecord
   end
 
   def bookmark?(board)
-    bookmark_boards.include?(board)
+    # bookmark_boards.include?(board)
+    # userを起点にbookmark_boardsを取りに行く(N+1問題)
+    board.bookmarks.pluck(:user_id).include?(id)
+    # これならboardを起点に検索をかけにいくのでN+1が起きない。(らしい)
+    # .pluck(:user_id).include?(id)がポイント
+
   end
 
 end

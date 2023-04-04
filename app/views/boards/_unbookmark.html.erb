@@ -1,7 +1,6 @@
-<ul class='crud-menu-btn list-inline float-right'>
-  <li class="list-inline-item">
-    <%= link_to bookmark_path(current_user.bookmarks.find_by(board_id: board.id)), id: "js-bookmark-button-for-board-#{board.id}", method: :delete do %>
-      <%= icon 'fa', 'star' %>
-    <% end %>
-  </li>
-</ul>
+<%= link_to bookmark_path(board.bookmarks.find { |b| b.user_id == current_user.id }),
+  id: "js-bookmark-button-for-board-#{board.id}",
+  class:"float-right",
+  method: :delete do %>
+    <%= icon 'fas', 'star' %>
+<% end %>
