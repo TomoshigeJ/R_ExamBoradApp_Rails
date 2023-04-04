@@ -40,6 +40,9 @@ class BoardsController < ApplicationController
     redirect_to boards_path, success: t('defaults.message.delete', item: Board.model_name.human)
   end
 
+  def bookmark
+  end
+
   private
 
   def board_params
