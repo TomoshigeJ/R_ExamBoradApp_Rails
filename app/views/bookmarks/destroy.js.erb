@@ -1,3 +1,1 @@
-var iconElement = document.getElementById("js-bookmark-icon-for-board-" + <%= @board.id %>)
-iconElement.classList.remove("fas");
-iconElement.classList.add("far");
+$("#js-bookmark-button-for-board-<%= @board.id %>").replaceWith("<%= j(render('boards/bookmark', board: @board)) %>");
