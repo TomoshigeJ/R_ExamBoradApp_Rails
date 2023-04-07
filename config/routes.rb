@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root to: 'static_pages#top'
 
   get 'login', to: 'user_sessions#new'
@@ -8,7 +7,7 @@ Rails.application.routes.draw do
 
   resources :users, only: %i[new create]
   resources :boards do
-    resources :comments, only: %i[create], shallow: true
+    resources :comments, only: %i[create destroy], shallow: true
     collection do
       get 'bookmarks'
     end
