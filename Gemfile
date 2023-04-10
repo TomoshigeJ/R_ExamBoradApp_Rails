@@ -72,4 +72,5 @@ gem 'draper'
 gem 'font-awesome-sass', '5.11.2'
 gem 'faker'
 gem 'carrierwave'
-gem "mini_magick"
+gem 'mini_magick'
+gem 'kaminari'
