@@ -5,6 +5,7 @@ ja:
     logout: 'ログアウト'
     post: '投稿'
     search_word: '検索ワード'
+    profiles: 'プロフィール'
     message:
       not_authenticated: 'ログインしてください'
       created: "%{item}を作成しました"
