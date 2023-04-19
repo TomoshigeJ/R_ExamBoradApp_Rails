@@ -13,8 +13,8 @@
           <td><%= @user.decorate.full_name %></td>
         </tr>
         <tr>
-          <th scope="row"><%= t('.avator') %></th>
-          <td>アバター</td>
+          <th scope="row"><%= t('.avatar') %></th>
+          <td><%= image_tag @user.avatar_url, size: '40x40', class: 'rounded-circle mr15'%></td>
         </tr>
       </table>
     </div>
