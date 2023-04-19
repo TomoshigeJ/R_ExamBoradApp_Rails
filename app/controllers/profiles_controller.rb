@@ -5,9 +5,8 @@ class ProfilesController < ApplicationController
   end
 
   def show
-    
-    binding.pry
-    
+    @user = User.find(current_user.id)
+    #binding.pry
   end
 
   private
