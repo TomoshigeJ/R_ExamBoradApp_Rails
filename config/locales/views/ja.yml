@@ -6,6 +6,7 @@ ja:
     post: '投稿'
     search_word: '検索ワード'
     profiles: 'プロフィール'
+    edit: '編集'
     message:
       not_authenticated: 'ログインしてください'
       created: "%{item}を作成しました"
@@ -59,3 +60,5 @@ ja:
       email: 'メールアドレス'
       full_name: '氏名'
       avatar: 'アバター'
+    edit:
+      title: 'プロフィール編集'
