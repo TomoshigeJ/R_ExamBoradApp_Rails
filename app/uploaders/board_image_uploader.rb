@@ -1,4 +1,4 @@
-class AvatarUploader < CarrierWave::Uploader::Base
+class BoardImageUploader < CarrierWave::Uploader::Base
   # 保存形式の指定
   storage :file
   
@@ -9,7 +9,7 @@ class AvatarUploader < CarrierWave::Uploader::Base
 
   # デフォルトで表示する画像を指定(app/assets/images/に画像は保存しておく)
   def default_url
-    'sample.jpg'
+    'board_placeholder.png'
   end
 
   # アップロードを許可するファイルの種類を指定

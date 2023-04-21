@@ -13,5 +13,5 @@ Rails.application.routes.draw do
     end
   end
   resources :bookmarks, only: %i[create destroy]
-  resource :profiles, only: %i[edit update show]
+  resource :profile, only: %i[edit update show]
 end
