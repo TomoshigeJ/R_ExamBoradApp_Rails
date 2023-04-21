@@ -2,20 +2,20 @@
   <%= render 'shared/error_messages', object: f.object %>
   <div class="form-group">
     <%= f.label :email %>
-    <%= f.text_field :title, class: 'form-control' %>
+    <%= f.text_field :email, class: 'form-control' %>
   </div>
   <div class="form-group">
     <%= f.label :last_name %>
-    <%= f.text_field :title, class: 'form-control' %>
+    <%= f.text_field :last_name, class: 'form-control' %>
   </div>
   <div class="form-group">
     <%= f.label :first_name %>
-    <%= f.text_field :title, class: 'form-control' %>
+    <%= f.text_field :first_name, class: 'form-control' %>
   </div>
   <div class="form-group">
     <%= f.label :avatar %>
-    <%= f.file_field :avatoar, onchange: 'previewImage()', class: 'form-control mb-3', accept: 'image/*' %>
-    <%= f.hidden_field :avatoar_cache %>
+    <%= f.file_field :avatar, onchange: 'previewImage()', class: 'form-control mb-3', accept: 'image/*' %>
+    <%= f.hidden_field :avatar_cache %>
   </div>
   <div>
     <%= image_tag user.avatar_url, id: 'preview', size: '100x100', class: 'rounded-circle mr15' %>
