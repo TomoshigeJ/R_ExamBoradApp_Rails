@@ -1,25 +1,24 @@
 <%= form_with model: user, url: profiles_path(@user), local: true do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
   <div class="form-group">
-    <%= f.label 'メールアドレス' %>
+    <%= f.label :email %>
     <%= f.text_field :title, class: 'form-control' %>
   </div>
   <div class="form-group">
-    <%= f.label '姓' %>
+    <%= f.label :last_name %>
     <%= f.text_field :title, class: 'form-control' %>
   </div>
   <div class="form-group">
-    <%= f.label '名' %>
+    <%= f.label :first_name %>
     <%= f.text_field :title, class: 'form-control' %>
   </div>
   <div class="form-group">
-    <%= f.label 'アバター' %>
-    <%= f.file_field :board_image, class: 'form-control mb-3', accept: 'image/*' %>
-    <%= f.file_field :board_image, onchange: 'previewImage()', class: 'form-control mb-3', accept: 'image/*' %>
-    <%= f.hidden_field :board_image_cache %>
+    <%= f.label :avatar %>
+    <%= f.file_field :avatoar, onchange: 'previewImage()', class: 'form-control mb-3', accept: 'image/*' %>
+    <%= f.hidden_field :avatoar_cache %>
   </div>
   <div>
-    <%= image_tag user.avatar_url, id: 'preview', size: '300x200' %>
+    <%= image_tag user.avatar_url, id: 'preview', size: '100x100', class: 'rounded-circle mr15' %>
   </div>
 
   <%= f.submit class: 'btn btn-primary' %>
