@@ -75,3 +75,6 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'kaminari'
 gem 'ransack'
+group :development do
+  gem 'letter_opener_web', '~> 1.0'
+end
