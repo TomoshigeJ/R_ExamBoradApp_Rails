@@ -1,5 +1,4 @@
 <% content_for(:title, t('.title')) %>
-
 <div class="container">
   <div class="row">
     <div class=" col-md-10 offset-md-1 col-lg-8 offset-lg-2">
@@ -9,9 +8,7 @@
           <%= f.label :email, User.human_attribute_name(:email) %>
           <%= f.email_field :email, class: 'form-control' %>
         </div>
-        <div class="actions">
-          <%= f.submit t('.button'), class: "btn btn-primary" %>
-        </div>
+        <%= f.submit t('password_resets.new.submit'), class: "btn btn-primary" %>
       <% end %>
     </div>
   </div>

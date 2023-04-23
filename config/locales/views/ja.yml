@@ -6,6 +6,7 @@ ja:
     post: '投稿'
     search_word: '検索ワード'
     edit: '編集'
+    password_reset: 'パスワードリセット'
     message:
       not_authenticated: 'ログインしてください'
       created: "%{item}を作成しました"
@@ -61,11 +62,11 @@ ja:
   password_resets:
     new:
       title: 'パスワードリセット申請'
-      button: '送信'
+      submit: '送信'
     create:
       success: 'パスワードリセット手順を送信しました'
     edit:
       title: 'パスワードリセット'
-      button: '更新する'
     update:
       success: 'パスワードが変更されました'
+      fail: 'パスワードの変更に失敗しました'

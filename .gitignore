@@ -36,6 +36,8 @@ db/runteq_normal_test
 
 # アップロードした画像ファイル
 /public/uploads
+
+# configファイル
 config/settings.local.yml
 config/settings/*.local.yml
 config/environments/*.local.yml
