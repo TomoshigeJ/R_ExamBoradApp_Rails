@@ -1,6 +1,8 @@
 class PasswordResetsController < ApplicationController
   skip_before_action :require_login
 
+  def new; end
+
   def create
     @user = User.find_by_email(params[:email])
     @user.deliver_reset_password_instructions! if @user
