@@ -62,3 +62,5 @@ ja:
     new:
       title: 'パスワードリセット申請'
       button: '送信'
+    create:
+      success: 'パスワードリセット手順を送信しました'
