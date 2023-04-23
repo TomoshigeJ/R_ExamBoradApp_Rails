@@ -64,3 +64,8 @@ ja:
       button: '送信'
     create:
       success: 'パスワードリセット手順を送信しました'
+    edit:
+      title: 'パスワードリセット'
+      button: '更新する'
+    update:
+      success: 'パスワードが変更されました'
