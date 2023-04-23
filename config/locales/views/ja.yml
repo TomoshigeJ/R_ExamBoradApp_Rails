@@ -58,3 +58,7 @@ ja:
       title: 'プロフィール'
     edit:
       title: 'プロフィール編集'
+  password_resets:
+    new:
+      title: 'パスワードリセット申請'
+      button: '送信'
