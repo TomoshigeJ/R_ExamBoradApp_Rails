@@ -78,7 +78,7 @@ ja:
         title: 'ログイン'
       create:
         success: 'ログインしました'
-        fall: 'ログインに失敗しました'
+        fail: 'ログインに失敗しました'
       destroy:
         success: 'ログアウトしました'
     dashboards:
