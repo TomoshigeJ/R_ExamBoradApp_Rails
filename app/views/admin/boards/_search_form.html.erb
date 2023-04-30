@@ -1,12 +1,13 @@
-<%= search_form_for @q, url: admin_users_path do |f| %>
+<%= search_form_for @q, url: admin_boards_path do |f| %>
   <div class="row">
     <div class="form-inline align-items-center mx-auto">
       <div class="col-auto">
         <%= f.search_field :title_or_body_cont, class: 'form-control', placeholder: t('defaults.search_word') %>
       </div>
       <div class="col-auto">
-        <%= f.search_field :title_or_body_cont, class: 'form-control', placeholder: t('defaults.search_date') %>
-        <i class="nav-icon far fa-calendar"></i>
+        <%= f.date_field :created_at_gteq, include_blank: true, class: 'form-control', placeholder: t('defaults.search_date') %>
+        ~
+        <%= f.date_field :created_at_lteq_end_of_day, include_blank: true, class: 'form-control', placeholder: t('defaults.search_date') %>
       </div>
       <div class="col-auto">
         <%= f.submit class: 'btn btn-primary' %>
