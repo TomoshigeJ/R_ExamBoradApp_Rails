@@ -1,7 +1,5 @@
 class Admin::BaseController < ApplicationController
   before_action :check_admin
-  before_action :set_q
-  before_action :set_users
   layout 'admin/layouts/application'
 
   private

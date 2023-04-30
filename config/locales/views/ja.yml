@@ -5,8 +5,11 @@ ja:
     logout: 'ログアウト'
     post: '投稿'
     search_word: '検索ワード'
+    show: '詳細'
     edit: '編集'
+    delete: '削除'
     password_reset: 'パスワードリセット'
+    unspecified: '指定なし'
     message:
       not_authenticated: 'ログインしてください'
       created: "%{item}を作成しました"
@@ -84,6 +87,13 @@ ja:
     dashboards:
       index:
         title: 'ダッシュボード'
+    users:
+      index:
+        title: 'ユーザー一覧'
+      show:
+        title: 'ユーザー詳細'
+      edit:
+        title: 'ユーザー編集'
   enums:
     user:
       role:
