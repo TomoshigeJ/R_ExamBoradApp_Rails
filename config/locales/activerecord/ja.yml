@@ -21,5 +21,8 @@ ja:
         title: 'タイトル'
         body: '本文'
         board_image: 'サムネイル'
+        id: 'ID'
+        user_name: '作成者'
+        created_at: '作成日時'
       comment:
         body: 'コメント'
