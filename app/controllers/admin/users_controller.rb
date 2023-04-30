@@ -22,6 +22,8 @@ class Admin::UsersController < Admin::BaseController
   end
 
   def destroy
+    @user.destroy!
+    redirect_to admin_users_path, success: t('defaults.message.delete', item: User.model_name.human)
   end
 
   private
