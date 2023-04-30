@@ -1,5 +1,5 @@
 class Admin::BaseController < ApplicationController
-  before_action :check_admin, :set_users
+  before_action :check_admin, :set_users, :set_q
   layout 'admin/layouts/application'
 
   private
@@ -14,6 +14,10 @@ class Admin::BaseController < ApplicationController
 
   def set_users
     @users = User.all
+  end
+
+  def set_q
+    @q = User.ransack(params[:q])
   end
 
 end
