@@ -1,5 +1,7 @@
 class Admin::BaseController < ApplicationController
-  before_action :check_admin, :set_users, :set_q
+  before_action :check_admin
+  before_action :set_q
+  before_action :set_users
   layout 'admin/layouts/application'
 
   private
@@ -12,12 +14,12 @@ class Admin::BaseController < ApplicationController
     redirect_to root_path, warning: t('defaults.message.not_authorized') unless current_user.admin?
   end
 
-  def set_users
-    @users = User.all
-  end
-
   def set_q
     @q = User.ransack(params[:q])
+  end
+
+  def set_users
+    @users = @q.result(distinct: true).page(params[:page])
   end
 
 end
