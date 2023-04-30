@@ -100,6 +100,8 @@ ja:
         title: '掲示板一覧'
       show:
         title: '掲示板詳細'
+      edit:
+        title: '掲示板編集'
   enums:
     user:
       role:
