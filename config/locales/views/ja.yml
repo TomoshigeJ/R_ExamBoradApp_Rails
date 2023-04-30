@@ -98,6 +98,8 @@ ja:
     boards:
       index:
         title: '掲示板一覧'
+      show:
+        title: '掲示板詳細'
   enums:
     user:
       role:
